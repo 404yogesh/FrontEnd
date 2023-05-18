@@ -6,3 +6,30 @@ object-fit:contain;
 
 }
 
+.splide__pagination{
+    top: 15rem;
+    /* background-color: black; */
+}
+.splide__track{
+    height: 15rem;
+}
+
+.splide__slide{
+    height: 20rem;
+   
+}
+
+@media screen and (max-width:641px) {
+   
+
+    .splide__pagination {
+        top: 12rem;
+    }
+}
+@media screen and (max-width:320px) {
+   
+
+    .splide__pagination {
+        top: 5rem;
+    }
+}

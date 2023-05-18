@@ -453,6 +453,7 @@ footer a {
 
 .article{
   display: flex;
+  flex-direction: row;
   margin-top:80px;
   justify-content: center;
   align-items: center;
@@ -589,6 +590,10 @@ h2 {
     margin: 30px 0;
     text-align: center;
   }
+
+  .heading{
+    margin:20px;
+  }
   
   .cards {
     width: 300px;
@@ -677,6 +682,65 @@ h2 {
     flex-wrap: wrap;
     /* place-items: center; */
   }
+
+  
+  .form-container {
+    /* width: 350px; */
+    /* background-color: rgba(22, 22, 22, 0.096); */
+    background-color: rgb(22 22 22 / 3%);
+    padding: 20px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    color: white;
+    
+  }
+  
+  textarea,
+  button {
+    /* max-width: 70rem; */
+    width:45vw;
+    padding: 9px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  .forminput{
+    max-width: 40rem;
+    padding: 9px;
+    border: .5px solid gray;
+    border-radius: 5px;
+    outline: none;
+    background-color: white;
+  }
+  
+  textarea {
+    resize: horizontal;
+    /* max-width: 100rem; */
+  }
+  
+  button {
+    cursor: pointer;
+    font-weight: 500;
+    background-color: var(--yellow)
+  }
+  
+  button:hover {
+    background-color: var(--yellow)
+  }
+  .contact{
+    color:black;
+  }
+
+  button:active {
+    background-color: rgb(149, 241, 210);
+  }
+  
   
 
 @media only screen and (max-width: 600px) {
@@ -700,5 +764,29 @@ h2 {
 
   .cards {
     margin-top: 20px;
+  }
+
+}
+
+@media screen and (max-width: 866px) {
+  .article{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  .article img{
+    width: 88%;
+    height: fit-content;
+    margin-top: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 634px){
+  .bannertext{
+    font-size: 10vw;
+  }
+
+  .banner{
+    height:78vh;
   }
 }
